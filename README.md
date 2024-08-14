@@ -33,7 +33,7 @@ To get a local copy of the project and run it on your machine:
 
 1. Clone the repository:
     ```
-    git clone https://github.com/yourusername/ReserveRoom.git
+    git clone https://github.com/MaikHeine/ReserveRoom.git
     ```
 
 2. Open the solution in Visual Studio.
@@ -53,14 +53,14 @@ To get a local copy of the project and run it on your machine:
 ## Project Structure
 The project is structured according to the MVVM pattern:
 
-- **Model**: Represents the data and business logic (e.g., Room, Reservation classes).
+- **Model**: Represents the data and business logic (e.g. Hotel, RoomID, Reservation classes).
 - **View**: The UI layer built using XAML, representing what the user interacts with.
 - **ViewModel**: Acts as a bridge between the Model and View. It contains commands, properties, and the logic that binds the Model and View together.
 
 ### Key Directories (WIP):
-- **/Models**: Contains the business logic and data (Room, Reservation, etc.)
+- **/Models**: Contains the business logic and data (Hotel, RoomID, Reservation etc.)
 - **/ViewModels**: Contains the ViewModel classes (MainViewModel, RoomViewModel, etc.)
-- **/Views**: XAML views representing the user interface (MainWindow.xaml, RoomView.xaml, etc.)
+- **/Views**: XAML views representing the user interface (MainWindow.xaml, etc.)
 - **/Commands**: Houses command classes to handle UI interactions (RelayCommand, etc.)
 
 ## MVVM Design Pattern
