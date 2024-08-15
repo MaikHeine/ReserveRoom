@@ -16,9 +16,9 @@ namespace ReserveRoom.Models
             _reservations = new List<Reservation>();
         }
 
-    public IEnumerable<Reservation> GetReservationsForUser(string username)
+    public IEnumerable<Reservation> GetAllReservations()
         {
-            return _reservations.Where(x => x.Username == username);
+            return _reservations;
         }
 
     public void AddReservation(Reservation reservation)
