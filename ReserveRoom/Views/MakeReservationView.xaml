@@ -28,7 +28,7 @@
             <TextBlock Grid.Row="0" Text="Username" />
             <TextBox Grid.Row="1"
                      Margin="0, 5, 0, 0"
-                     Text="" />
+                     Text="{Binding Username}" />
         </Grid>
 
         <Grid Grid.Row="2" Margin="0, 10, 0, 0">
@@ -43,7 +43,7 @@
 
             <TextBlock Grid.Row="0"
                        Grid.Column="0"
-                       Text="Floor No." />
+                       Text="{Binding FloorNumber}" />
             <TextBox Grid.Row="1"
                      Grid.Column="0"
                      Margin="0, 5, 0, 0"
@@ -51,7 +51,7 @@
             <TextBlock Grid.Row="0"
                        Grid.Column="1"
                        Margin="10, 0, 0, 0"
-                       Text="Room No." />
+                       Text="{Binding RoomNumber}" />
             <TextBox Grid.Row="1"
                      Grid.Column="1"
                      Margin="10, 5, 0, 0"
@@ -74,7 +74,7 @@
             <DatePicker Grid.Row="1"
                      Grid.Column="0"
                      Margin="0, 5, 0, 0"
-                     SelectedDate="" />
+                     SelectedDate="{Binding StartDate}" />
             <TextBlock Grid.Row="0"
                        Grid.Column="1"
                        Margin="10, 0, 0, 0"
@@ -82,14 +82,14 @@
             <DatePicker Grid.Row="1"
                      Grid.Column="1"
                      Margin="10, 5, 0, 0"
-                     SelectedDate="" />
+                     SelectedDate="{Binding EndDate}" />
         </Grid>
 
         <StackPanel Grid.Row="4"
                     Margin="0, 25, 0, 0"
                     Orientation="Horizontal">
-            <Button Content="Submit" />
-            <Button Margin="10, 0, 0, 0" Content="Cancel" />
+            <Button Content="Submit" Command="{Binding SubmitCommand}"/>
+            <Button Margin="10, 0, 0, 0" Content="Cancel" Command="{Binding CancelCommand}" />
         </StackPanel>
     </Grid>
 </UserControl>
